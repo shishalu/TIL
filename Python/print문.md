@@ -3,15 +3,21 @@
 ### 1. .format()
 ```py
 print('{} {}'.format('1', 'two'))
+# 1 two
+
 # 인덱스 위치를 통해 순서변경도 가능
 print('{1} {0}'.format('two''1'))
+# 1 two
+
+# 변수명으로 대입하기
+print('num : {a}'.format(a = 10))
 ```
 
 ### 2. %s, %d, %f
 ```py
 print('%s %s' % ('one', 'two'))
 print('%d %d' % ('1', '2')) #digit
-print('%f %f' % ('1', '2'))
+print('%f %f' % ('1.0', '2.0'))
 ```
 
 ## print(end=" ")와 print('')
@@ -34,4 +40,19 @@ for i in range(2, 10):
 # 3 6 9 12 15 18 21 24 27
 # ...
 # 9 18 27 36 45 54 63 72 81
+```
+
+## 구분자 sep
+- 출력하는 문자 사이의 공간을 설정한 문자로 채워준다
+
+```py
+print('a', 'b', sep="-")
+# a-b
+```
+
+- sep을 ""으로 설정하면 공백없이 출력된다
+
+```py
+print(a, b, sep="")
+# ab
 ```

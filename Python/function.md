@@ -35,6 +35,7 @@ print('Q. {0}에 대문자가 있나요? A. {1}'.format(s2, s2.islower()))
 # False
 ```
 
+
 ## string.replace(old, new, [count])
 - count의 값을 설정하지 않으면 문자열 전체를 의미하는 count = -1
 - **문자열**에서만 사용가능, 튜플이나 리스트에서 사용할 경우 *Attribute Error* 발생
